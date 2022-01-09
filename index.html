@@ -7,25 +7,50 @@
 
     <style>
       :root {
-        --background-color: rgb(214, 214, 214);
-        --heading: #2b2b2b;
+        --background-color: white;
+        --primaryColor: #2b2b2b;
         --main-text: #f7f7f7;
+        font-family: sans-serif;
+      }
+
+      * {
+        text-align: center;
       }
 
       body {
         background-color: var(--background-color);
+        margin: 0;
       }
 
       table {
+        margin: auto;
         height: 100%;
         width: 60%;
-        margin: auto;
+        background-color: #dbdbdb;
+        column-gap: 0px;
       }
 
       thead {
-        background-color: var(--heading);
+        background-color: var(--primaryColor);
         color: var(--main-text);
         font-weight: bold;
+      }
+
+      thead td {
+        padding: 10px;
+      }
+
+      thead #logo {
+        width: 15%;
+      }
+
+      td {
+        margin: 0px;
+        border: 2px solid red;
+      }
+
+      #footer {
+        background-color: --primaryColor;
       }
     </style>
   </head>
@@ -33,10 +58,45 @@
   <body>
     <table>
       <thead>
-        Thank you cunt
+        <tr>
+          <td colspan="4">
+            <div id="logo">
+              <img
+              src="https://santacruzskateboards.com/images/logos/santa-cruz-skateboards.png"
+              / alt="logo" width="100px">
+            </div>
+            <div>
+              <h2>THANK YOU FOR YOUR PURCHASE</h2>
+              <h3>Your order is on it's way</h3>
+            </div>
+          </td>
+        </tr>
       </thead>
-      <tbody></tbody>
-      <tfoot></tfoot>
+      <tbody>
+        <tr>
+          <td>tbody</td>
+          <td>tbody</td>
+          <td>tbody</td>
+          <td>tbody</td>
+        </tr>
+        <tr>
+          <td>tbody</td>
+          <td>tbody</td>
+          <td>tbody</td>
+          <td>tbody</td>
+        </tr>
+        <tr>
+          <td>tbody</td>
+          <td>tbody</td>
+          <td>tbody</td>
+          <td>tbody</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="4" id="footer">© Therealcoolpup</td>
+        </tr>
+      </tfoot>
     </table>
   </body>
 </html>
